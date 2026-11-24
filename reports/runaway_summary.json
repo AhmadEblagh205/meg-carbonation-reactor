@@ -1,0 +1,9 @@
+{
+  "max_dHotspot_dT0_by_coolant": {
+    "365": 0.83,
+    "370": 0.707,
+    "375": 0.598,
+    "380": 0.503
+  },
+  "note": "Sensitivity peaks under strong cooling, where conversion is still suppressed and inlet heat unlocks reaction; near the adiabatic ceiling extra inlet temperature buys little. The slope is the parametric sensitivity proxy."
+}

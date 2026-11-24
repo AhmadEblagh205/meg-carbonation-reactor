@@ -1,0 +1,37 @@
+{
+  "definition": "finite-difference dT_peak/dT_in over a steady PFR parameter sweep",
+  "not_a_claim_of": [
+    "dynamic stability",
+    "thermal runaway boundary",
+    "reactor multiplicity"
+  ],
+  "by_coolant_K": {
+    "365": {
+      "max_dTpeak_dTin": 1.8301,
+      "at_inlet_K": 392.5,
+      "peak_temperature_K_at_that_point": 427.8453,
+      "peak_temperature_K_at_400K_feed": 441.4908
+    },
+    "370": {
+      "max_dTpeak_dTin": 1.707,
+      "at_inlet_K": 395.0,
+      "peak_temperature_K_at_that_point": 435.3744,
+      "peak_temperature_K_at_400K_feed": 443.8839
+    },
+    "375": {
+      "max_dTpeak_dTin": 1.5973,
+      "at_inlet_K": 400.0,
+      "peak_temperature_K_at_that_point": 446.223,
+      "peak_temperature_K_at_400K_feed": 446.223
+    },
+    "380": {
+      "max_dTpeak_dTin": 1.5023,
+      "at_inlet_K": 400.0,
+      "peak_temperature_K_at_that_point": 448.5041,
+      "peak_temperature_K_at_400K_feed": 448.5041
+    }
+  },
+  "strongest_amplification_coolant_K": 365,
+  "warmest_peak_at_400K_feed_coolant_K": 380,
+  "finding": "The coolant giving the highest absolute peak temperature is not the same as the coolant giving the strongest local amplification. Thermal state and thermal sensitivity are different diagnostics."
+}

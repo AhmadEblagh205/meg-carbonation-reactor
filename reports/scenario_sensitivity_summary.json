@@ -1,0 +1,28 @@
+{
+  "n_latin_hypercube_scenarios": 128,
+  "ranges_are": "illustrative stress-test ranges, not probability distributions",
+  "spearman_conversion": {
+    "k_ref_multiplier": 0.5665,
+    "Ea_J_mol": 0.1447,
+    "Ua_multiplier": -0.513,
+    "dH_magnitude_multiplier": 0.1646,
+    "T0_K": 0.2259,
+    "CO2_to_EO": 0.59
+  },
+  "spearman_peak_temperature": {
+    "k_ref_multiplier": 0.4588,
+    "Ea_J_mol": 0.0999,
+    "Ua_multiplier": -0.4284,
+    "dH_magnitude_multiplier": 0.3781,
+    "T0_K": 0.5253,
+    "CO2_to_EO": 0.3412
+  },
+  "conversion_range_pct": [
+    72.581,
+    100.0
+  ],
+  "peak_temperature_range_C": [
+    116.905,
+    196.354
+  ]
+}

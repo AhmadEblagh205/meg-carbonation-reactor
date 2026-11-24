@@ -1,0 +1,17 @@
+{
+  "grid_points": 221,
+  "pareto_points": 33,
+  "highest_conversion_pct": 99.999,
+  "highest_conversion_condition": {
+    "T0_K": 400.0,
+    "CO2_to_EO": 1.6,
+    "peak_temperature_C": 188.283
+  },
+  "lowest_peak_condition": {
+    "T0_K": 360.0,
+    "CO2_to_EO": 1.0,
+    "conversion_pct": 81.382,
+    "peak_temperature_C": 123.073
+  },
+  "interpretation": "The map exposes the conversion-versus-thermal-state trade-off without inventing a safety threshold. A real design decision would need validated kinetics, materials limits and dynamic safety analysis."
+}

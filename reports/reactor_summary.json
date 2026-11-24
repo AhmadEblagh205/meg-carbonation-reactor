@@ -1,0 +1,13 @@
+{
+  "outlet_conversion_pct": 92.357,
+  "peak_temperature_C": 142.843,
+  "outlet_temperature_C": 105.148,
+  "EC_production_mol_s": 92.357,
+  "full_limiting_reactant_adiabatic_rise_K": 79.167,
+  "actual_peak_rise_K": 35.993,
+  "peak_rise_fraction_of_reaction_only_reference": 0.4546,
+  "thermal_NTU": 4.0,
+  "max_relative_energy_balance_residual": 4.534046021206142e-06,
+  "limiting_reactant_depleted_inside_reactor": false,
+  "note": "Illustrative kinetics/thermodynamics; not a validated industrial reactor prediction."
+}
