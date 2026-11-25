@@ -162,3 +162,17 @@ The current model omits several effects that can matter materially in a real EO/
 - equipment/material/relief constraints.
 
 A defensible next step would be to replace the illustrative kinetics with published/experimental kinetics, then re-run the same balance, sensitivity and validation framework before making process claims.
+
+## Notes moved from the README
+
+Numerical safeguards added in the v2 audit: parameter-domain validation, explicit solver-success checking, a reaction-extent formulation for exact stoichiometry, handling of limiting-reactant depletion without negative outlet flows, post-depletion cooling through the remaining reactor volume, an independent integrated energy-balance residual, and tests that separate absolute thermal state from local thermal amplification.
+
+Naming. An earlier version called the steady-state parameter sweep a runaway study. A static PFR sweep cannot establish dynamic stability, multiplicity or a runaway boundary, so the analysis now reports dT_peak/dT_in as a thermal-amplification diagnostic. The legacy command `python src/runaway.py` still runs and prints that it is the thermal-sensitivity screen.
+
+Thermal sensitivity results from the controlled sweep. Coolant at 365 K gives the strongest local amplification, 1.83 K/K near a 392.5 K feed. At a 400 K feed, coolant at 380 K gives the hottest absolute peak, 448.5 K. Stronger cooling lowers the absolute peak but can raise the local sensitivity to feed temperature.
+
+Operating window. The grid has 221 combinations of feed temperature and CO2:EO ratio. The highest-conversion corner approaches 100% conversion at a peak of about 188 C. The lowest-peak corner is about 123 C at 81.4% conversion. No "safe" temperature is defined, because that would need validated kinetics, material limits and dynamic safety analysis.
+
+Scenario screen. The 128-point Latin-hypercube ranges are not probability distributions, so the result is not calibrated uncertainty quantification. Spearman rank correlations: conversion with CO2 excess +0.59, reference reaction rate +0.57 and heat-transfer strength -0.51; peak temperature with feed temperature +0.53, reference reaction rate +0.46, heat-transfer strength -0.43 and reaction-heat magnitude +0.38.
+
+Not established: validated kinetics for a commercial catalyst, plant conversion or selectivity, dynamic stability or relief sizing, gas-liquid mass transfer, phase equilibrium and pressure drop, and parameter uncertainty from experimental data.
